@@ -18,8 +18,7 @@ Explain how to use the code, including any command-line arguments, configuration
 
 ```bash
 # Example command to run the code
-python main.py --agent PPO --network parameters\graph.gpickle --requests parameters\service1.json  --logs 1_tensorboard_logs\ --output 2_results\
-
+--agent PPO --network parameters\graph.gpickle --requests parameters\service1.json  --logs 1_tensorboard_logs\ --output 2_results\
 
 ## Structure
 
