@@ -14,11 +14,9 @@ List any dependencies or requirements needed to run the code successfully. Inclu
 
 ## Usage
 
-Explain how to use the code, including any command-line arguments, configurations, or examples. If there are specific steps for reproducing the experiments mentioned in the paper, provide those details.
+The command-line arguments:
 
-```bash
-# Example command to run the code
---agent PPO --network parameters\graph.gpickle --requests parameters\service1.json  --logs 1_tensorboard_logs\ --output 2_results\
+```--agent PPO --network parameters\graph.gpickle --requests parameters\service1.json  --logs 1_tensorboard_logs\ --output 2_results\```
 
 ## Structure
 
