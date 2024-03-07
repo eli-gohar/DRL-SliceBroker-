@@ -10,7 +10,7 @@ This repository contains the code used in the experiments conducted for the pape
 
 ## Requirements
 
-List any dependencies or requirements needed to run the code successfully. Include instructions for setting up the environment.
+Conda was used to creat the envioronment and requirments are presented in  `environment.yml`
 
 ## Usage
 
