@@ -2,15 +2,19 @@
 
 ## Overview
 
-This repository contains the code used in the experiments conducted for the paper titled ["An online cost minimization of the slice broker based on deep reinforcement learning"](https://doi.org/10.1016/j.comnet.2024.110198), which has been accepted for publication in [Computer Networks](https://www.sciencedirect.com/journal/computer-networks). The code provided here represents an experimental implementation that evolved from an initial exploration into deep reinforcement learning. 
+The code provided here represents an experimental implementation during the initial exploration into deep reinforcement learning (DRL). Subsequently, this code evolved to become the foundation for the experiments detailed in the paper titled ["An online cost minimization of the slice broker based on deep reinforcement learning"](https://doi.org/10.1016/j.comnet.2024.110198), which has been accepted for publication in [Computer Networks](https://www.sciencedirect.com/journal/computer-networks). 
+
+## Project Purpose
+
+The primary objective of this project was to address the online cost minimization of slice broker through the application of DRL using various RL algorithms.
 
 ## Disclaimer
 
-**This code is provided as-is, and not the final version of the code for the paper. It was inspired by the code base [Computer Networks group @ UPB](https://github.com/CN-UPB/NFVdeep/tree/main), which served as a foundational reference during the early stages of development.**
+***This code is provided as-is, and not the final version of the code for the paper.*** 
 
 ## Requirements
 
-Conda was used to creat the envioronment and requirments are presented in  `environment.yml`
+Conda was used to create the environment, and the requirements are specified in the environment.yml file.
 
 ## Usage
 
@@ -22,22 +26,31 @@ The command-line arguments:
 
 Describe the organization of the repository, outlining key directories and their purposes.
 
-- `src`: Contains the source code files.
-- `data`: Placeholder for datasets used in experiments.
-- `models`: Placeholder for saved model checkpoints.
+## `src` Directory
+Contains the source code files.
 
-## Contributions
+### `agent` Subdirectory
+This directory contains files related to the agent functionality.
 
-If you welcome contributions, provide guidelines for how others can contribute to the project. Include details about the preferred process for submitting issues, proposing changes, and making pull requests.
+- `baselines.py`: Implements baseline algorithms.
+- `logging.py`: Handles logging functionalities.
+- `recorder.py`: Manages recording functionalities.
+
+### `environment` Subdirectory
+This directory contains files related to the environment.
+
+- `env.py`: Based on `gym` describes the environment where the reinforcement learning (RL) agent operates.
+- `inp_topology.py`: Implements the underlaying infrastructure provider (InP) topology.
+- `network.py`: Manages network-related functionalities.
+- `nsr.py`: Creates network slice requests (NSRs).
+- `sfc.py`: Implements service function chaining (SFC)
+
 
 ## Acknowledgments
 
-Acknowledge any external libraries, code bases, or resources that significantly influenced this work.
+The code base [Computer Networks group @ UPB](https://github.com/CN-UPB/NFVdeep/tree/main), served as a foundational reference during the early stages of learning to impliment DRL.
+
 
 ## License
 
-Specify the license under which your code is released. If you're unsure, you can use an open-source license like MIT or Apache 2.0.
-
-## Contact
-
-Provide your contact information or a way for users to reach out with questions, feedback, or issues.
+DRL-SliceBroker © 2022 by Ali Gohar is licensed under CC BY 4.0 
