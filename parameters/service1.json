@@ -1,0 +1,24 @@
+{
+    "type": "poisson_arrival",
+    "static_arrival_time_per_episode": true,
+
+    "timeslot_length":200,
+    "num_of_timeslots":216,
+
+    "request_name": "Video_Streaming",
+    "request_arrival_rate": -1,
+    "request_arrival_per_timeslot": 8,
+    "request_deletion_rate": -1,
+    "request_deletion_in_timeslots": 54,
+
+    "req_num_of_vnfs": 5,
+    "req_vnf_names": ["NAT", "FW", "TM", "VOC", "IDPS"],
+    "initial_number_of_users": -1,
+    "min_and_max_number_of_users": [1, 200],
+    "max_response_latency": [150, 300],
+    "per_user_data_rate": [53,68],
+
+    "ingress": "MEH",
+    "egress": "DC"
+}
+
